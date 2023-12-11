@@ -137,6 +137,7 @@ namespace Model
                 if (obj.Name != null && obj.Name != "")
                     movingPlatForms.Add(obj);
             }
+
             var platforms = movingPlatForms.Select(x => x.Name).Distinct();            
 
             foreach (var platform in platforms)
@@ -145,9 +146,7 @@ namespace Model
                 MovingPlatform mp = new MovingPlatform(m_collisionLayer.MapObjects.Where(x => x.Name == platform && x.Polyline != null).First(),
                                                         m_collisionLayer.MapObjects.Where(x => x.Name == platform && !x.TileID.HasValue && x.Polyline == null).First());
                 m_movingPlatforms.Add(mp);
-            }
-
-        
+            }  
         }
 
         //Return a list of enemy map objects

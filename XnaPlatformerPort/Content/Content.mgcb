@@ -82,17 +82,13 @@
 /build:Graphics/platform.png
 
 #begin level-1.tmx
-/importer:TiledMapImporter
-/processor:TiledMapProcessor
-/build:level-1.tmx
-
-#begin Levels/Level-3.tmx
-/importer:TiledMapImporter
-/processor:TiledMapProcessor
-/build:Levels/Level-3.tmx
+/copy:level-1.tmx
 
 #begin Levels/Level-3_org.tmx
 /copy:Levels/Level-3_org.tmx
+
+#begin Levels/Level-3.tmx
+/copy:Levels/Level-3.tmx
 
 #begin Sprites/avatar3.png
 /importer:TextureImporter
@@ -274,6 +270,18 @@
 /processorParam:TextureFormat=Color
 /build:TileTextures/Background03.png
 
+#begin TileTextures/Tileset1-32.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:TileTextures/Tileset1-32.png
+
 #begin TileTextures/Tileset1.1.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -298,7 +306,7 @@
 /processorParam:TextureFormat=Color
 /build:TileTextures/Tileset1.png
 
-#begin TileTextures/Tileset1-32.png
+#begin TileTextures/Tileset2-32.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -308,7 +316,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:TileTextures/Tileset1-32.png
+/build:TileTextures/Tileset2-32.png
 
 #begin TileTextures/Tileset2.2.png
 /importer:TextureImporter
@@ -333,18 +341,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:TileTextures/Tileset2.png
-
-#begin TileTextures/Tileset2-32.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:TileTextures/Tileset2-32.png
 
 #begin TileTextures/TileSheet01.png
 /importer:TextureImporter

@@ -67,7 +67,7 @@ namespace Controller
 
             //Loading the TMX maps
             m_TMXMaps = new List<Map>();
-            var map = TMXContentProcessor.LoadTMX("Content/Levels/Level-3_org.tmx", a_content);
+            var map = TMXContentProcessor.LoadTMX("Levels/Level-3_org.tmx", "TileTextures", a_content);
             m_TMXMaps.Add(map);
         }
 
